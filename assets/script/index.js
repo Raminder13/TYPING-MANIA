@@ -147,6 +147,11 @@ onEvent('click', dialog, function(event) {
     }
 });
 
+const result = () => {
+    let resultScore = new Score(score, (wordCount / 99) * 100);
+    wordElement.innerHTML=`You score ${resultScore.percentage} and had ${wordCount} correct`;
+  };
+
 onEvent('click', startBtn, () => {
     readySetGo(countdown);
     audioElement.volume = 0.2;
