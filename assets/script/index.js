@@ -57,7 +57,6 @@ function saveData() {
 
     localStorage.setItem('Games', JSON.stringify(prevGames));}
 
-// Show Leaderboard Function
 function showData() {
     const allGames = JSON.parse(localStorage.getItem('Games'));
     let index = 0;
@@ -71,7 +70,6 @@ function showData() {
         </tr> `;
     }}
 
-// Running Timer Function
 function timer(timeLeft) {
     const timer = setInterval(() => {
         timeDisplay.innerHTML = `<i class="fa-solid fa-clock"></i> ${--timeLeft} seconds`;
