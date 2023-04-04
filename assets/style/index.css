@@ -12,6 +12,12 @@ body {
     height: 100vh;
 }
 
+.format h3{
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+}
+
 .game-settings {
     display: flex;
     flex-direction: column;
