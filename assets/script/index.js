@@ -82,6 +82,7 @@ function timer(timeLeft) {
             startBtn.style.cursor = 'not-allowed';
             startBtn.disabled = true;
             wordInput.disabled = true;
+            audioElement.pause();
             saveData();
             clearInterval(timer);
         }
